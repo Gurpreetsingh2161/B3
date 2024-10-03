@@ -1,0 +1,63 @@
+How to write regular expressions:-
+
+\d{10}
+=9889999999
+
+\d*
+
+\d+
+
+\d{3}\s\d{3}\s\d{4}
+=988 999 9999
+
+\d{3}\s*\d{3}\s*\d{4}
+
+\d{3}-\d{3}-\d{4}
+=988-999-9999
+
+\d{3}[-\s]\d{3}[-\s]\d{4}
+=988-999 9999
+
+\(*\d{3}\)*[-\s]*\d{3}[-\s]*\d{4}
+=(988)-999-9999
+
+\w{4}[@]\w{5}[.]\w{3}
+=demo@gmail.com
+
+w{8}[.]\w{5}[@]\w{3}[.]\w{4}[.]\w{2}[.]\w{2}
+=Gurpreet.14571@stu.upes.ac.in
+
+[\w]+@[\w.]+
+=de_mo@gmail.com
+
+([\w]+)@[\w.]+
+=de_mo@gmail.com (Colour changing)
+
+\w{5}[:][/][/]\w{6}[.]\w{3}[/]\w{8}[/]\w{4}
+=https://github.com/upessocs/B3B4
+
+https*://(\w+)[.]\w{3}/(\w+)/(\w+)
+==https://github.com/upessocs/B3B4 (Colour changing)
+
+\s\d{2}
+=ram, 29,
+shyam, 32, 
+xyz, 27,   (AGE)
+
+\d{10}\W
+=9889999999
+
+\W
+=No Words
+
+\D
+=No Digits
+
+\S
+=No Space
+
+^
+=Start of line
+
+$
+=End of line
